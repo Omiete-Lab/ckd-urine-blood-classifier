@@ -4,7 +4,7 @@ Exploratory Python project applying machine learning to routine laboratory
 and clinical markers to distinguish CKD from non-CKD patients.
 
 ## Dataset
-UCI Chronic Kidney Disease Dataset — 400 patients, 24 clinical and
+UCI Chronic Kidney Disease Dataset - 400 patients, 24 clinical and
 laboratory variables (e.g. serum creatinine, blood urea, haemoglobin,
 urine albumin). 250 patients have CKD (62.5%), 150 do not (37.5%).
 https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease
@@ -21,8 +21,8 @@ https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease
   the costlier error.
 
 ## Results
-- Cross-validated: Logistic Regression — recall 0.99, precision 0.995,
-  ROC AUC ~1.0. Random Forest — recall 0.995, precision 0.985, ROC AUC ~1.0.
+- Cross-validated: Logistic Regression - recall 0.99, precision 0.995,
+  ROC AUC ~1.0. Random Forest - recall 0.995, precision 0.985, ROC AUC 1.0.
 - Final test (random forest, 80 held-out patients): all 80 classified
   correctly (30/30 Not CKD, 50/50 CKD).
 - Most influential features: haemoglobin, packed cell volume, serum
@@ -34,7 +34,7 @@ https://archive.ics.uci.edu/dataset/336/chronic+kidney+disease
 
 ## Interpretation
 Three of the top five features (haemoglobin, PCV, RBC count) reflect
-anaemia — healthy kidneys produce erythropoietin, which stimulates red
+anaemia, healthy kidneys produce erythropoietin, which stimulates red
 cell production, and this falls in CKD. Creatinine rises as filtration
 declines, and reduced urine specific gravity reflects the kidney's lost
 ability to concentrate urine. Feature importance shows association, not
@@ -47,7 +47,7 @@ causation.
 - CKD is over-represented relative to the general population, so
   performance would differ in a screening setting.
 - Some extreme creatinine values may reflect severe disease or data-entry
-  error — not distinguishable from this dataset alone.
+  error, not distinguishable from this dataset alone.
 - Exploratory model, not a diagnostic tool.
 
 ## Tools
